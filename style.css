@@ -40,6 +40,15 @@ h1 {
     font-family: 'Noto Sans KR', sans-serif;
 }
 
+h3 {
+    font-weight: 400;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.658);
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
 a {
     width: 80%;
     margin: 20px;
