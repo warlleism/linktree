@@ -3,7 +3,7 @@ import Github from "./assets/icons/github.png"
 import Linkedin from "./assets/icons/linkedin.png"
 import Search from "./assets/icons/search.png"
 import Instagram from "./assets/icons/instagram.png"
-import Foto from "./assets/icons/foto.jpg"
+import Foto from "./assets/icons/foto.png"
 import { useEffect, useState } from 'react'
 
 import {
@@ -41,15 +41,13 @@ function App() {
 
   return (
     <div className='main' id='main'>
-
       <div className='container-share' id='share'>
-        <img className="foto-share" src={Foto} alt="" />
+        <img className="foto-share" style={{ borderRadius: "100%" }} src={Foto} alt="" />
         <div className='name'>Warllei Martins</div>
-        <span class="material-symbols-outlined points-share" style={{ backgroundColor: share ? '#97949485' : '#03030385' }} onClick={() => setShare(!share)}>
+        <span className="material-symbols-outlined points-share" style={{ backgroundColor: share ? '#97949485' : '#03030385' }} onClick={() => setShare(!share)}>
           share
         </span>
       </div>
-
       {
         share
           ?
@@ -79,39 +77,33 @@ function App() {
           :
           false
       }
-
-
-
       <div className="main-conteiner-links">
         <img className="foto" src={Foto} alt="" />
         <div className="container-info">
           <h1>Warllei Martins</h1>
           <h3>Desenvolvedor</h3>
           <div className="container-itens">
-            <a href="https://github.com/warlleism" target="_blank">
+            <a href="https://github.com/warlleism" target="_blank" rel="noreferrer">
               <img src={Github} alt="" />
             </a>
-            <a href="https://www.linkedin.com/in/warllei-martins-823510153/" target="_blank">
+            <a href="https://www.linkedin.com/in/warllei-martins-823510153/" target="_blank" rel="noreferrer">
               <img src={Linkedin} alt="" />
             </a>
           </div>
         </div>
-        <a className="itens" href="https://github.com/warlleism" target="_blank">
+        <a className="itens" href="https://github.com/warlleism" target="_blank" rel="noreferrer">
           <img src={Github} alt="" />
           <span>Github</span>
         </a>
-
-        <a className="itens" href="https://www.linkedin.com/in/warllei-martins-823510153/" target="_blank">
+        <a className="itens" href="https://www.linkedin.com/in/warllei-martins-823510153/" target="_blank" rel="noreferrer">
           <img src={Linkedin} alt="" />
           <span>Linkedin</span>
         </a>
-
-        <a className="itens" href="https://www.instagram.com/warlleimartins/" target="_blank">
+        <a className="itens" href="https://www.instagram.com/warlleimartins/" target="_blank" rel="noreferrer">
           <img src={Instagram} alt="" />
           <span>Instagram</span>
         </a>
-
-        <a className="itens" href="https://portifoliowarllei.netlify.app/" target="_blank">
+        <a className="itens" href="https://portifoliowarllei.netlify.app/" target="_blank" rel="noreferrer">
           <img src={Search} alt="" />
           <span>Portifólio</span>
         </a>
